@@ -1,69 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap');
+@import './variables/generals';
+@import './variables/colors';
+@import './variables/fonts';
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
+@import './sections/header';
+@import './sections/footer';
+
 
 /* INDEX */
-
-header {
-    background-color: #F0EBCE;
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header img,
-.footer img {
-    width: 195px;
-}
-
-.header li {
-    margin: 10px;
-    display: inline;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bold;
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
-.nav-link {
-    color: #4E6C50;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: #AA8B56;
-}
-
-.active {
-    color: #AA8B56 !important;
-}
-
-.navbar-toggler {
-    border: none !important;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none !important;
-}
-
-.header .boton {
-    font-family: 'Outfit', sans-serif;
-    color: #fff;
-    background-color: #AA8B56;
-    padding: 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.header .boton:hover {
-    background-color: #4E6C50;
-    scale: 1.05;
-}
 
 main .hero-index {
     background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/8514_background_1984x900.jpeg);
@@ -77,7 +20,7 @@ main .hero-index {
 }
 
 .hero-index h1 {
-    font-family: 'Outfit', sans-serif;
+    font-family: $Outfit;
     font-weight: bolder;
     color: #fff;
     font-size: 70px;
@@ -320,27 +263,6 @@ main .hero-index {
     padding: 0 30px 0 30px;
 }
 
-footer {
-    background-color: #F0EBCE;
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer li {
-    margin: 10px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bold;
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
-.footer a {
-    color: #4E6C50;
-    text-decoration: none;
-}
-
 /* MENÚ */
 
 main .hero-menu,
@@ -471,7 +393,7 @@ section .pizzasClasicas,
 
 .galeriaHist {  
     padding-top: 120px;
-    width: 1300px;
+    width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -499,98 +421,14 @@ section .pizzasClasicas,
     margin-top: 80px;
 }
 
-@media (max-width: 768px) {
+@import './sections/mediasqueries';
 
-    .header img,
-    .footer img {
-        width: 140px;
-    }
 
-    .hero-index h1 {
-        font-size: 35px;
-    }
+//AUN POR HACER
 
-    .header .navbar {
-        order: 1;
-    }
-
-    .header .logo {
-        order: 2;
-    }
-
-    .header .boton {
-        display: none;
-    }
-
-    .header {
-        justify-content: space-between;
-    }
-
-    .pedido,
-    .pizzasClasicas,
-    .pizzasEspeciales,
-    .pizzasPizzano {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-
-    .div-pizza {
-        flex-direction: column;
-    }
-
-    .tu-orden {
-        display: none;
-    }
-
-    .orden-mobile {
-        display: block;
-    }
-
-    .minibanner {
-        margin-top: 0;
-    }
-
-    .minibanner p {
-        font-size: 16px;
-    }
-
-    .pizzasMenu h2 {
-        padding: 60px 0 55px 20px;
-    }
-
-    .orden-gral {
-        display: block;
-    }
-
-    .orden-gral p {
-        font-size: 16px;
-    }
-
-    .histSection, .galeriaHist {
-        display: block;
-        max-width: 100%;
-        padding-top: 50px;
-        margin-top: 50px;
-    }
-
-    .textHistoria h2 {
-        margin: 40px 20px;
-        padding: 0;
-    }
-
-    .textHistoria p {
-        margin: 40px 20px;
-        padding: 0;
-    }
-
-    .imgHistoria img {
-        height: 325px;
-    }
-
-    .galeriaHist img {
-        width: 325px;
-    }
-}
+// 1. Crear variables para los colores. 
+// 2. Sustituir valores por las variables que ya creé. 
+// 3. Crear las páginas: Locales y Reservación.
+// 4. Anidar el estilo del main.
+// 5. Probar ¡¡EN OTRO PROYECTO!! cambiar el main.scss por style.scss y si es posible, crear una sección _main.scss en sections y dejar solo los @import en style.scss.
+// 6. Ver grabación de SASS II

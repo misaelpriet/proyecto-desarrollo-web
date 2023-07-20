@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+
+    .header img,
+    .footer img {
+        width: 140px;
+    }
+
+    .hero-index h1 {
+        font-size: 35px;
+    }
+
+    .header .navbar {
+        order: 1;
+    }
+
+    .header .logo {
+        order: 2;
+    }
+
+    .header .boton {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .pedido,
+    .pizzasClasicas,
+    .pizzasEspeciales,
+    .pizzasPizzano {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .div-pizza {
+        flex-direction: column;
+    }
+
+    .tu-orden {
+        display: none;
+    }
+
+    .orden-mobile {
+        display: block;
+    }
+
+    .minibanner {
+        margin-top: 0;
+    }
+
+    .minibanner p {
+        font-size: 16px;
+    }
+
+    .pizzasMenu h2 {
+        padding: 60px 0 55px 20px;
+    }
+
+    .orden-gral {
+        display: block;
+    }
+
+    .orden-gral p {
+        font-size: 16px;
+    }
+
+    .histSection, .galeriaHist {
+        display: block;
+        max-width: 100%;
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+
+    .textHistoria h2 {
+        margin: 40px 20px;
+        padding: 0;
+    }
+
+    .textHistoria p {
+        margin: 40px 20px;
+        padding: 0;
+    }
+
+    .imgHistoria img {
+        height: 325px;
+    }
+
+    .galeriaHist img {
+        width: 325px;
+    }
+}   
