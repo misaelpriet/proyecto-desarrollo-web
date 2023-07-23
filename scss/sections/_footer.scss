@@ -1,5 +1,5 @@
 footer {
-    background-color: #F0EBCE;
+    background-color: $crema;
     padding: 30px;
     display: flex;
     justify-content: space-around;
@@ -9,13 +9,13 @@ footer {
     }
     li {
         margin: 10px;
-        font-family: 'Outfit', sans-serif;
+        font-family: $Outfit;
         font-weight: bold;
         list-style-type: none;
         text-transform: uppercase;
     }
     a {
-        color: #4E6C50;
+        color: $verde-claro;
         text-decoration: none;
     }    
 }

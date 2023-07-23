@@ -5,7 +5,7 @@
   padding: 0px; }
 
 header {
-  background-color: #F0EBCE;
+  background-color: #faf3e7;
   padding: 30px;
   display: flex;
   justify-content: space-around;
@@ -15,7 +15,7 @@ header {
   header li {
     margin: 10px;
     display: inline;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: bold;
     list-style-type: none;
     text-transform: uppercase; }
@@ -37,8 +37,8 @@ header {
   box-shadow: none !important; }
 
 .header .boton {
-  font-family: 'Outfit', sans-serif;
-  color: #fff;
+  font-family: "Outfit", sans-serif;
+  color: white;
   background-color: #AA8B56;
   padding: 15px;
   border-radius: 5px;
@@ -50,7 +50,7 @@ header {
   scale: 1.05; }
 
 footer {
-  background-color: #F0EBCE;
+  background-color: #faf3e7;
   padding: 30px;
   display: flex;
   justify-content: space-around;
@@ -59,7 +59,7 @@ footer {
     width: 195px; }
   footer li {
     margin: 10px;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: bold;
     list-style-type: none;
     text-transform: uppercase; }
@@ -77,16 +77,15 @@ main .hero-index {
   justify-content: center;
   align-items: center;
   text-align: center; }
+  main .hero-index h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 70px; }
 
-.hero-index h1 {
+main h2 {
   font-family: "Outfit", sans-serif;
-  font-weight: bolder;
-  color: #fff;
-  font-size: 70px; }
-
-.main h2 {
-  font-family: 'Outfit', sans-serif;
-  color: #4E6C50;
+  color: #395144;
   font-size: 30px;
   padding: 60px 55px; }
 
@@ -131,31 +130,27 @@ main .hero-index {
   align-items: center;
   justify-content: space-between;
   flex-direction: column; }
-
-.div-pizza img {
-  height: 160px;
-  margin-bottom: 10px; }
-
-.div-pizza h3 {
-  font-family: 'Outfit', sans-serif;
-  color: #395144;
-  margin-bottom: 20px; }
-
-.div-pizza p {
-  font-size: 12px;
-  text-align: center;
-  font-family: 'Outfit', sans-serif; }
-
-.div-pizza a {
-  background-color: #4E6C50;
-  font-family: 'Outfit', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  padding: 5px 15px;
-  margin-top: 20px;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px; }
+  .div-pizza img {
+    height: 160px;
+    margin-bottom: 10px; }
+  .div-pizza h3 {
+    font-family: "Outfit", sans-serif;
+    color: #395144;
+    margin-bottom: 20px; }
+  .div-pizza p {
+    font-size: 12px;
+    text-align: center;
+    font-family: "Outfit", sans-serif; }
+  .div-pizza a {
+    background-color: #4E6C50;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px; }
 
 .div-pizza a:hover {
   background-color: #AA8B56; }
@@ -166,24 +161,31 @@ main .hero-index {
   padding: 0 30px 0 30px;
   margin-left: 30px;
   margin-right: 10px; }
-
-.tu-orden h2 {
-  color: white;
-  text-align: center; }
-
-.tu-orden img {
-  height: 70px; }
-
-.tu-orden h3 {
-  font-family: 'Outfit', sans-serif;
-  font-size: 20px;
-  color: #395144; }
-
-.tu-orden p {
-  font-family: 'Outfit', sans-serif; }
+  .tu-orden h2 {
+    color: white;
+    text-align: center; }
+  .tu-orden img {
+    height: 70px; }
+  .tu-orden h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    color: #395144; }
+  .tu-orden p {
+    font-family: "Outfit", sans-serif; }
+  .tu-orden a {
+    background-color: #4E6C50;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; }
 
 .orden1 {
-  background-color: #F0EBCE;
+  background-color: #faf3e7;
   padding: 0 20px 0 20px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -192,7 +194,7 @@ main .hero-index {
   justify-content: space-between; }
 
 .orden2 {
-  background-color: #F0EBCE;
+  background-color: #faf3e7;
   padding: 0 20px 0 20px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -201,7 +203,7 @@ main .hero-index {
   justify-content: space-between; }
 
 .orden3 {
-  background-color: #F0EBCE;
+  background-color: #faf3e7;
   padding: 0 20px 0 20px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -213,25 +215,12 @@ main .hero-index {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-
-.precio-total p {
-  font-size: 20px;
-  color: #fff; }
-
-.tu-orden a {
-  background-color: #4E6C50;
-  font-family: 'Outfit', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 5px 15px;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center; }
+  .precio-total p {
+    font-size: 20px;
+    color: white; }
 
 .tu-orden a:hover {
-  background-color: #F0EBCE;
+  background-color: #faf3e7;
   color: #395144; }
 
 .orden-mobile {
@@ -240,23 +229,21 @@ main .hero-index {
   padding: 40px 30px 25px 30px;
   margin-top: 70px;
   display: none; }
+  .orden-mobile img {
+    height: 50px; }
 
 .pedido-mob {
   display: flex;
   align-items: center;
   justify-content: space-evenly; }
-
-.orden-mobile img {
-  height: 50px; }
-
-.pedido-mob p {
-  color: #fff;
-  font-size: 16px;
-  font-family: 'Outfit', sans-serif; }
+  .pedido-mob p {
+    color: white;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif; }
 
 .btn-pedido-mob a {
   background-color: #4E6C50;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-top: 15px;
@@ -277,12 +264,11 @@ main .hero-index {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.minibanner p {
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  padding: 0 30px 0 30px; }
+  .minibanner p {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 30px 0 30px; }
 
 /* MENÚ */
 main .hero-menu,
@@ -299,11 +285,16 @@ main .hero-menu,
 .pizzasMenu {
   max-width: 1300px;
   margin: auto; }
+  .pizzasMenu h2 {
+    font-family: "Outfit", sans-serif;
+    color: #4E6C50;
+    font-size: 30px;
+    padding: 60px 0 55px 50px; }
 
 .hero-menu h1 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: bolder;
-  color: #fff;
+  color: white;
   font-size: 40px; }
 
 section .pizzasClasicas,
@@ -313,12 +304,6 @@ section .pizzasClasicas,
   display: flex;
   justify-content: center; }
 
-.pizzasMenu h2 {
-  font-family: 'Outfit', sans-serif;
-  color: #4E6C50;
-  font-size: 30px;
-  padding: 60px 0 55px 50px; }
-
 .orden-gral {
   max-width: 100%;
   background-color: #AA8B56;
@@ -327,17 +312,15 @@ section .pizzasClasicas,
   margin-top: 70px;
   display: flex;
   justify-content: space-around; }
-
-.orden-gral img {
-  height: 50px; }
-
-.orden-gral p {
-  font-size: 20px;
-  margin-left: 20px; }
+  .orden-gral img {
+    height: 50px; }
+  .orden-gral p {
+    font-size: 20px;
+    margin-left: 20px; }
 
 .btn-pedido-gral a {
   background-color: #4E6C50;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-top: 15px;
@@ -349,14 +332,14 @@ section .pizzasClasicas,
   justify-content: center; }
 
 .btn-pedido-gral a:hover {
-  background-color: #F0EBCE;
+  background-color: #faf3e7;
   color: #395144; }
 
 /* HISTORIA */
 .hero-hist h1 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: bolder;
-  color: #fff;
+  color: white;
   font-size: 40px; }
 
 .histSection {
@@ -373,24 +356,21 @@ section .pizzasClasicas,
 
 .imgHistoria {
   grid-area: imgHistoria; }
+  .imgHistoria img {
+    border-radius: 130px 130px 5px 5px;
+    height: 500px; }
+  .imgHistoria h2 {
+    font-family: "Outfit", sans-serif;
+    color: #4E6C50;
+    font-size: 30px;
+    padding-bottom: 30px; }
 
 .textHistoria {
   grid-area: textHistoria; }
-
-.imgHistoria img {
-  border-radius: 130px 130px 5px 5px;
-  height: 500px; }
-
-.textHistoria h2 {
-  font-family: 'Outfit', sans-serif;
-  color: #4E6C50;
-  font-size: 30px;
-  padding-bottom: 30px; }
-
-.textHistoria p {
-  font-family: 'Outfit', sans-serif;
-  font-size: 16px;
-  padding-right: 65px; }
+  .textHistoria p {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    padding-right: 65px; }
 
 .galeriaHist {
   padding-top: 120px;
@@ -401,6 +381,8 @@ section .pizzasClasicas,
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "galeria-1 galeria-2 galeria-3 galeria-4"; }
+  .galeriaHist img {
+    width: 360px; }
 
 .galeria-1 {
   grid-area: galeria-1; }
@@ -413,9 +395,6 @@ section .pizzasClasicas,
 
 .galeria-4 {
   grid-area: galeria-4; }
-
-.galeriaHist img {
-  width: 360px; }
 
 .orden-gral {
   max-width: 1300px;

@@ -8,29 +8,31 @@
 
 /* INDEX */
 
-main .hero-index {
-    background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/8514_background_1984x900.jpeg);
-    height: 650px;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+main {
+    .hero-index {
+        background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/8514_background_1984x900.jpeg);
+        height: 650px;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
-.hero-index h1 {
-    font-family: $Outfit;
-    font-weight: bolder;
-    color: #fff;
-    font-size: 70px;
-}
+        h1 {
+            font-family: $Outfit;
+            font-weight: bolder;
+            color: white;
+            font-size: 70px;
+        }
+    }
 
-.main h2 {
-    font-family: 'Outfit', sans-serif;
-    color: #4E6C50;
-    font-size: 30px;
-    padding: 60px 55px;
+    h2 {
+        font-family: $Outfit;
+        color: $verde-oscuro;
+        font-size: $h2;
+        padding: 60px 55px;
+    }
 }
 
 .pedido {
@@ -74,8 +76,8 @@ main .hero-index {
 }
 
 .div-pizza {
-    background-color: #faf3e7;
-    border: 1px #AA8B56 solid;
+    background-color: $crema;
+    border: 1px $beige solid;
     border-radius: 100px 100px 2px 2px;
     margin: 0 10px 30px 10px;
     width: 250px;
@@ -85,70 +87,76 @@ main .hero-index {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-}
 
-.div-pizza img {
-    height: 160px;
-    margin-bottom: 10px;
-}
+    img {
+        height: 160px;
+        margin-bottom: 10px;
+    }
 
-.div-pizza h3 {
-    font-family: 'Outfit', sans-serif;
-    color: #395144;
-    margin-bottom: 20px;
-}
-
-.div-pizza p {
-    font-size: 12px;
-    text-align: center;
-    font-family: 'Outfit', sans-serif;
-}
-
-.div-pizza a {
-    background-color: #4E6C50;
-    font-family: 'Outfit', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 5px 15px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
+    h3 {
+        font-family: $Outfit;
+        color: $verde-oscuro;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 12px;
+        text-align: center;
+        font-family: $Outfit;
+    }
+    a {
+        background-color: $verde-claro;
+        font-family: $Outfit;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 5px 15px;
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+    }
 }
 
 .div-pizza a:hover {
-    background-color: #AA8B56;
+    background-color: $beige;
 }
 
 .tu-orden {
-    background-color: #AA8B56;
+    background-color: $beige;
     border-radius: 130px 130px 5px 5px;
     padding: 0 30px 0 30px;
     margin-left: 30px;
     margin-right: 10px;
-}
-
-.tu-orden h2 {
-    color: white;
-    text-align: center;
-}
-
-.tu-orden img {
-    height: 70px;
-}
-
-.tu-orden h3 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    color: #395144;
-}
-
-.tu-orden p {
-    font-family: 'Outfit', sans-serif;
+    h2 {
+        color: white;
+        text-align: center;
+    }
+    img {
+        height: 70px;
+    }
+    h3 {
+        font-family: $Outfit;
+        font-size: $h3;
+        color: $verde-oscuro;
+    }
+    p {
+        font-family: $Outfit;
+    }
+    a {
+        background-color: $verde-claro;
+        font-family: $Outfit;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 15px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .orden1 {
-    background-color: #F0EBCE;
+    background-color: $crema;
     padding: 0 20px 0 20px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -158,7 +166,7 @@ main .hero-index {
 }
 
 .orden2 {
-    background-color: #F0EBCE;
+    background-color: $crema;
     padding: 0 20px 0 20px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -168,7 +176,7 @@ main .hero-index {
 }
 
 .orden3 {
-    background-color: #F0EBCE;
+    background-color: $crema;
     padding: 0 20px 0 20px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -181,58 +189,42 @@ main .hero-index {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.precio-total p {
-    font-size: 20px;
-    color: #fff;
-}
-
-.tu-orden a {
-    background-color: #4E6C50;
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
+    p {
+        font-size: 20px;
+        color: white;
+    }
 }
 
 .tu-orden a:hover {
-    background-color: #F0EBCE;
-    color: #395144;
+    background-color: $crema;
+    color: $verde-oscuro;
 }
 
 .orden-mobile {
-    background-color: #AA8B56;
+    background-color: $beige;
     border-radius: 80px 80px 0 0;
     padding: 40px 30px 25px 30px;
     margin-top: 70px;
     display: none;
+    img {
+        height: 50px;
+    }
 }
 
 .pedido-mob {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.orden-mobile img {
-    height: 50px;
-}
-
-.pedido-mob p {
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Outfit', sans-serif;
-}
+    p {
+        color: white;
+        font-size: 16px;
+        font-family: $Outfit;
+    }
+} 
 
 .btn-pedido-mob a {
-    background-color: #4E6C50;
-    font-family: 'Outfit', sans-serif;
+    background-color: $verde-claro;
+    font-family: $Outfit;
     font-size: 18px;
     font-weight: 500;
     margin-top: 15px;
@@ -254,14 +246,13 @@ main .hero-index {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.minibanner p {
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    padding: 0 30px 0 30px;
-}
+    p {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        padding: 0 30px 0 30px;
+    }
+} 
 
 /* MENÚ */
 
@@ -278,15 +269,21 @@ main .hero-menu,
 }
 
 .pizzasMenu {
-    max-width: 1300px;
+    max-width: $ancho-grande;
     margin: auto;
+    h2 {
+        font-family: $Outfit;
+        color: $verde-claro;
+        font-size: $h2;
+        padding: 60px 0 55px 50px;
+    }
 }
 
 .hero-menu h1 {
-    font-family: 'Outfit', sans-serif;
+    font-family: $Outfit;
     font-weight: bolder;
-    color: #fff;
-    font-size: 40px;
+    color: white;
+    font-size: $h1-secundarias;
 }
 
 section .pizzasClasicas,
@@ -297,35 +294,26 @@ section .pizzasClasicas,
     justify-content: center;
 }
 
-.pizzasMenu h2 {
-    font-family: 'Outfit', sans-serif;
-    color: #4E6C50;
-    font-size: 30px;
-    padding: 60px 0 55px 50px;
-}
-
 .orden-gral {
     max-width: 100%;
-    background-color: #AA8B56;
+    background-color: $beige;
     border-radius: 80px 80px 0 0;
     padding: 40px 30px 25px 30px;
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
-}
-
-.orden-gral img {
-    height: 50px;
-}
-
-.orden-gral p {
-    font-size: 20px;
-    margin-left: 20px;
+    img {
+        height: 50px;
+    }
+    p {
+        font-size: 20px;
+        margin-left: 20px;
+    }
 }
 
 .btn-pedido-gral a {
-    background-color: #4E6C50;
-    font-family: 'Outfit', sans-serif;
+    background-color: $verde-claro;
+    font-family: $Outfit;
     font-size: 18px;
     font-weight: 500;
     margin-top: 15px;
@@ -338,21 +326,21 @@ section .pizzasClasicas,
 }
 
 .btn-pedido-gral a:hover {
-    background-color: #F0EBCE;
-    color: #395144;
+    background-color: $crema;
+    color: $verde-oscuro;
 }
 
 /* HISTORIA */
 
 .hero-hist h1 {
-    font-family: 'Outfit', sans-serif;
+    font-family: $Outfit;
     font-weight: bolder;
-    color: #fff;
-    font-size: 40px;
+    color: white;
+    font-size: $h1-secundarias;
 }
 
 .histSection {
-    max-width: 1300px;
+    max-width: $ancho-grande;
     margin: auto;
     justify-items: center;
     margin-top: 120px;
@@ -367,56 +355,60 @@ section .pizzasClasicas,
 
 .imgHistoria {
     grid-area: imgHistoria;
+    img {
+        border-radius: 130px 130px 5px 5px;
+        height: 500px;
+    }
+    h2 {
+        font-family: $Outfit;
+        color: $verde-claro;
+        font-size: $h2;
+        padding-bottom: 30px;
+    }
 }
 
 .textHistoria {
     grid-area: textHistoria;
+    p {
+        font-family: $Outfit;
+        font-size: 16px;
+        padding-right: 65px;
+    }
 }
 
-.imgHistoria img {
-    border-radius: 130px 130px 5px 5px;
-    height: 500px;
-}
-
-.textHistoria h2 {
-    font-family: 'Outfit', sans-serif;
-    color: #4E6C50;
-    font-size: 30px;
-    padding-bottom: 30px;
-}
-
-.textHistoria p {
-    font-family: 'Outfit', sans-serif;
-    font-size: 16px;
-    padding-right: 65px;
-}
-
-.galeriaHist {  
+.galeriaHist {
     padding-top: 120px;
-    width: 1400px;
+    width: $ancho-completo;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "galeria-1 galeria-2 galeria-3 galeria-4";
-  }
-  
-  .galeria-1 { grid-area: galeria-1; }
-  
-  .galeria-2 { grid-area: galeria-2; }
-  
-  .galeria-3 { grid-area: galeria-3; }
-  
-  .galeria-4 { grid-area: galeria-4; }
+        "galeria-1 galeria-2 galeria-3 galeria-4";
+        img {
+            width: 360px;
+        }
+}
 
-.galeriaHist img {
-    width: 360px;
+.galeria-1 {
+    grid-area: galeria-1;
+}
+
+.galeria-2 {
+    grid-area: galeria-2;
+}
+
+.galeria-3 {
+    grid-area: galeria-3;
+}
+
+.galeria-4 {
+    grid-area: galeria-4;
 }
 
 .orden-gral {
-    max-width: 1300px;
+    max-width: $ancho-grande;
     margin: auto;
     margin-top: 80px;
 }
@@ -426,9 +418,9 @@ section .pizzasClasicas,
 
 //AUN POR HACER
 
-// 1. Crear variables para los colores. 
-// 2. Sustituir valores por las variables que ya creé. 
+// 1. Crear variables para los colores. (HECHO)
+// 2. Sustituir valores por las variables que ya creé. (HECHO)
 // 3. Crear las páginas: Locales y Reservación.
-// 4. Anidar el estilo del main.
+// 4. Anidar el estilo del main. (HECHO)
 // 5. Probar ¡¡EN OTRO PROYECTO!! cambiar el main.scss por style.scss y si es posible, crear una sección _main.scss en sections y dejar solo los @import en style.scss.
 // 6. Ver grabación de SASS II

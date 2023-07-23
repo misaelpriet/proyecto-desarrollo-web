@@ -1,5 +1,5 @@
 header {
-    background-color: #F0EBCE;
+    background-color: $crema;
     padding: 30px;
     display: flex;
     justify-content: space-around;
@@ -10,7 +10,7 @@ header {
     li {
     margin: 10px;
     display: inline;
-    font-family: 'Outfit', sans-serif;
+    font-family: $Outfit;
     font-weight: bold;
     list-style-type: none;
     text-transform: uppercase;
@@ -18,16 +18,16 @@ header {
 }
 
 .nav-link {
-    color: #4E6C50;
+    color: $verde-claro;
     text-decoration: none;
 }
 
 .nav-link:hover {
-    color: #AA8B56;
+    color: $beige;
 }
 
 .active {
-    color: #AA8B56 !important;
+    color: $beige !important;
 }
 
 .navbar-toggler {
@@ -39,9 +39,9 @@ header {
 }
 
 .header .boton {
-    font-family: 'Outfit', sans-serif;
-    color: #fff;
-    background-color: #AA8B56;
+    font-family: $Outfit;
+    color: white;
+    background-color: $beige;
     padding: 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -49,6 +49,6 @@ header {
 }
 
 .header .boton:hover {
-    background-color: #4E6C50;
+    background-color: $verde-claro;
     scale: 1.05;
 }
