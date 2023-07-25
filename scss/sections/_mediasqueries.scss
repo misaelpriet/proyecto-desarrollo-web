@@ -6,7 +6,7 @@
     }
 
     .hero-index h1 {
-        font-size: 35px!important;
+        font-size: 35px !important;
     }
 
     .header .navbar {
@@ -68,7 +68,8 @@
         font-size: 16px;
     }
 
-    .histSection, .galeriaHist {
+    .histSection,
+    .galeriaHist {
         display: block;
         max-width: 100%;
         padding-top: 50px;
@@ -96,6 +97,7 @@
     section .divReserva {
         padding: 20px;
         margin-top: 30px;
+
         h2 {
             padding: 40px 0;
         }
@@ -106,6 +108,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+
         .pizzanoLocal {
             margin-top: 40px;
         }
@@ -114,4 +117,4 @@
     .formReserva {
         width: 300px;
     }
-}   
+}

@@ -4,9 +4,11 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     img {
         width: 195px;
     }
+
     li {
         margin: 10px;
         font-family: $Outfit;
@@ -14,8 +16,9 @@ footer {
         list-style-type: none;
         text-transform: uppercase;
     }
+
     a {
         color: $verde-claro;
         text-decoration: none;
-    }    
+    }
 }

@@ -4,16 +4,18 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     img {
         width: 195px;
     }
+
     li {
-    margin: 10px;
-    display: inline;
-    font-family: $Outfit;
-    font-weight: bold;
-    list-style-type: none;
-    text-transform: uppercase;
+        margin: 10px;
+        display: inline;
+        font-family: $Outfit;
+        font-weight: bold;
+        list-style-type: none;
+        text-transform: uppercase;
     }
 }
 
