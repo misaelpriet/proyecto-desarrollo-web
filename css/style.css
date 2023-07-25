@@ -68,7 +68,7 @@ footer {
     text-decoration: none; }
 
 /* INDEX */
-main .hero-index {
+.main .hero-index {
   background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/8514_background_1984x900.jpeg);
   height: 650px;
   background-size: cover;
@@ -77,13 +77,13 @@ main .hero-index {
   justify-content: center;
   align-items: center;
   text-align: center; }
-  main .hero-index h1 {
+  .main .hero-index h1 {
     font-family: "Outfit", sans-serif;
     font-weight: bolder;
     color: white;
     font-size: 70px; }
 
-main h2 {
+.main h2 {
   font-family: "Outfit", sans-serif;
   color: #395144;
   font-size: 30px;
@@ -271,8 +271,7 @@ main h2 {
     padding: 0 30px 0 30px; }
 
 /* MENÚ */
-main .hero-menu,
-.hero-hist {
+main .hero-sec {
   background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/pizza-bg-2.png);
   height: 300px;
   background-size: cover;
@@ -291,7 +290,7 @@ main .hero-menu,
     font-size: 30px;
     padding: 60px 0 55px 50px; }
 
-.hero-menu h1 {
+.hero-sec h1 {
   font-family: "Outfit", sans-serif;
   font-weight: bolder;
   color: white;
@@ -359,14 +358,14 @@ section .pizzasClasicas,
   .imgHistoria img {
     border-radius: 130px 130px 5px 5px;
     height: 500px; }
-  .imgHistoria h2 {
+
+.textHistoria {
+  grid-area: textHistoria; }
+  .textHistoria h2 {
     font-family: "Outfit", sans-serif;
     color: #4E6C50;
     font-size: 30px;
     padding-bottom: 30px; }
-
-.textHistoria {
-  grid-area: textHistoria; }
   .textHistoria p {
     font-family: "Outfit", sans-serif;
     font-size: 16px;
@@ -401,12 +400,109 @@ section .pizzasClasicas,
   margin: auto;
   margin-top: 80px; }
 
+.divReserva {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 80px; }
+  .divReserva h2 {
+    font-family: "Outfit", sans-serif;
+    color: #4E6C50;
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center; }
+  .divReserva p {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    text-align: center; }
+
+.localOpciones {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-template-areas: "pizzano-1 pizzano-2"; }
+  .localOpciones .pizzanoLocal {
+    background-color: #faf3e7;
+    border-radius: 100px 100px 2px 2px;
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    align-items: center; }
+    .localOpciones .pizzanoLocal img {
+      height: 300px;
+      padding-bottom: 30px;
+      border-radius: 100px 100px 2px 2px; }
+    .localOpciones .pizzanoLocal p {
+      font-family: "Outfit", sans-serif;
+      font-size: 14px; }
+    .localOpciones .pizzanoLocal a {
+      background-color: #4E6C50;
+      font-family: "Outfit", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      padding: 5px 15px;
+      margin-top: 25px;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px; }
+
+.pizzanoLocal a:hover {
+  background-color: #AA8B56; }
+
+.pizzano-1 {
+  grid-area: pizzano-1; }
+
+.pizzano-2 {
+  grid-area: pizzano-2; }
+
+.secReserva {
+  margin-bottom: 80px; }
+
+.formReserva {
+  width: 500px;
+  background: #faf3e7;
+  padding: 50px 30px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 5px;
+  border: 1px solid #AA8B56;
+  font-family: "Outfit", sans-serif; }
+  .formReserva .button {
+    width: 100%;
+    background: #4E6C50;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px; }
+
+.button:hover {
+  background-color: #AA8B56;
+  color: white; }
+
+.campos {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 16px;
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  color: white; }
+
 @media (max-width: 768px) {
   .header img,
   .footer img {
     width: 140px; }
   .hero-index h1 {
-    font-size: 35px; }
+    font-size: 35px !important; }
   .header .navbar {
     order: 1; }
   .header .logo {
@@ -454,4 +550,18 @@ section .pizzasClasicas,
   .imgHistoria img {
     height: 325px; }
   .galeriaHist img {
-    width: 325px; } }
+    width: 325px; }
+  section .divReserva {
+    padding: 20px;
+    margin-top: 30px; }
+    section .divReserva h2 {
+      padding: 40px 0; }
+  .localOpciones {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .localOpciones .pizzanoLocal {
+      margin-top: 40px; }
+  .formReserva {
+    width: 300px; } }

@@ -6,7 +6,7 @@
     }
 
     .hero-index h1 {
-        font-size: 35px;
+        font-size: 35px!important;
     }
 
     .header .navbar {
@@ -91,5 +91,27 @@
 
     .galeriaHist img {
         width: 325px;
+    }
+
+    section .divReserva {
+        padding: 20px;
+        margin-top: 30px;
+        h2 {
+            padding: 40px 0;
+        }
+    }
+
+    .localOpciones {
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .pizzanoLocal {
+            margin-top: 40px;
+        }
+    }
+
+    .formReserva {
+        width: 300px;
     }
 }   
