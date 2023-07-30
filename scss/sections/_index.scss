@@ -1,0 +1,256 @@
+.main {
+    .hero-index {
+        background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/home-bg-pizzano-.jpeg);
+        height: 650px;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            font-family: $Outfit;
+            font-weight: bolder;
+            color: white;
+            font-size: 70px;
+        }
+    }
+
+    h2 {
+        font-family: $Outfit;
+        color: $verde-oscuro;
+        font-size: $h2;
+        padding: 60px 55px;
+    }
+}
+
+.pedido {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "pizza1 pizza2 pizza3 tu-orden"
+        "pizza4 pizza5 pizza6 tu-orden"
+    ;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.pizza1 {
+    grid-area: pizza1;
+}
+
+.pizza2 {
+    grid-area: pizza2;
+}
+
+.pizza3 {
+    grid-area: pizza3;
+}
+
+.pizza4 {
+    grid-area: pizza4;
+}
+
+.pizza5 {
+    grid-area: pizza5;
+}
+
+.pizza6 {
+    grid-area: pizza6;
+}
+
+.tu-orden {
+    grid-area: tu-orden;
+}
+
+.div-pizza {
+    background-color: $crema;
+    border: 1px $beige solid;
+    border-radius: 100px 100px 2px 2px;
+    margin: 0 10px 30px 10px;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    img {
+        height: 160px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-family: $Outfit;
+        color: $verde-oscuro;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        text-align: center;
+        font-family: $Outfit;
+    }
+
+    a {
+        background-color: $verde-claro;
+        font-family: $Outfit;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 5px 15px;
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+.div-pizza a:hover {
+    background-color: $beige;
+}
+
+.tu-orden {
+    background-color: $beige;
+    border-radius: 130px 130px 5px 5px;
+    padding: 0 30px 0 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+
+    h2 {
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        height: 70px;
+    }
+
+    h3 {
+        font-family: $Outfit;
+        font-size: $h3;
+        color: $verde-oscuro;
+    }
+
+    p {
+        font-family: $Outfit;
+    }
+
+    a {
+        background-color: $verde-claro;
+        font-family: $Outfit;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 15px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.orden1 {
+    background-color: $crema;
+    padding: 0 20px 0 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orden2 {
+    background-color: $crema;
+    padding: 0 20px 0 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orden3 {
+    background-color: $crema;
+    padding: 0 20px 0 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precio-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+.tu-orden a:hover {
+    background-color: $crema;
+    color: $verde-oscuro;
+}
+
+.orden-mobile {
+    background-color: $beige;
+    border-radius: 80px 80px 0 0;
+    padding: 40px 30px 25px 30px;
+    margin-top: 70px;
+    display: none;
+
+    img {
+        height: 50px;
+    }
+}
+
+.pedido-mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+        color: white;
+        font-size: 16px;
+        font-family: $Outfit;
+    }
+}
+
+.btn-pedido-mob a {
+    background-color: $verde-claro;
+    font-family: $Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.minibanner {
+    background-image: linear-gradient(rgba(57, 81, 68, 0.8), rgba(57, 81, 68, 0.8)), url(/recursos/pizza-bg-1.png);
+    height: 350px;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        padding: 0 30px 0 30px;
+    }
+}

@@ -1,0 +1,84 @@
+.hero-hist h1 {
+    font-family: $Outfit;
+    font-weight: bolder;
+    color: white;
+    font-size: $h1-secundarias;
+}
+
+.histSection {
+    max-width: $ancho-grande;
+    margin: auto;
+    justify-items: center;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "imgHistoria textHistoria";
+}
+
+.imgHistoria {
+    grid-area: imgHistoria;
+
+    img {
+        border-radius: 130px 130px 5px 5px;
+        height: 500px;
+    }
+}
+
+.textHistoria {
+    grid-area: textHistoria;
+
+    h2 {
+        font-family: $Outfit;
+        color: $verde-claro;
+        font-size: $h2;
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-family: $Outfit;
+        font-size: 16px;
+        padding-right: 65px;
+    }
+}
+
+.galeriaHist {
+    padding-top: 120px;
+    width: $ancho-completo;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "galeria-1 galeria-2 galeria-3 galeria-4";
+
+    img {
+        width: 360px;
+    }
+}
+
+.galeria-1 {
+    grid-area: galeria-1;
+}
+
+.galeria-2 {
+    grid-area: galeria-2;
+}
+
+.galeria-3 {
+    grid-area: galeria-3;
+}
+
+.galeria-4 {
+    grid-area: galeria-4;
+}
+
+.orden-gral {
+    max-width: $ancho-grande;
+    margin: auto;
+    margin-top: 80px;
+}
