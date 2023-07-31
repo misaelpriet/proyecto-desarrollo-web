@@ -369,7 +369,9 @@ section .pizzasClasicas,
 
 .galeriaHist {
   padding-top: 120px;
-  width: 1400px;
+  max-width: 1300px;
+  margin: auto;
+  justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -377,7 +379,7 @@ section .pizzasClasicas,
   grid-auto-flow: row;
   grid-template-areas: "galeria-1 galeria-2 galeria-3 galeria-4"; }
   .galeriaHist img {
-    width: 360px; }
+    width: 325px; }
 
 .galeria-1 {
   grid-area: galeria-1; }
